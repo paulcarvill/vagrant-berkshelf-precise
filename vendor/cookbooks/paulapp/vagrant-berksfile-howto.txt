@@ -1,0 +1,61 @@
+cleanup
+=======
+
+gem uninstall vagrant
+
+gem uninstall berkshelf
+
+
+
+install
+=======
+
+install virtualbox
+
+install ruby 1.9 (via rvm)
+
+install vagrant binary
+
+vagrant plugin install vagrant-berkshelf
+
+vagrant plugin install vagrant-omnibus
+
+bundle install
+
+
+
+create
+======
+
+berks cookbook paulapp
+
+cd paulapp
+
+bundle install
+
+
+
+config
+======
+
+edit Vagrantfile
+
+
+
+run
+===
+
+vagrant up
+
+vagrant provision
+
+
+
+
+
+sources
+=======
+
+http://misheska.com/blog/2013/06/16/getting-started-writing-chef-cookbooks-the-berkshelf-way/
+
+http://leopard.in.ua/2013/01/05/chef-solo-getting-started-part-2/
